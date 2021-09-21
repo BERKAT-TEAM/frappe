@@ -374,7 +374,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-08-05 12:16:03.456173",
+ "modified": "2021-09-21 10:06:57.185029",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "Settings",
@@ -386,7 +386,7 @@
  "public": 1,
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 29,
+ "sequence_id": 5,
  "shortcuts": [
   {
    "icon": "setting",
