@@ -5,6 +5,7 @@
  "creation": "2020-03-02 14:53:24.980279",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
+ "divisi_ming": 0,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends": "",
@@ -215,7 +216,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-08-05 12:16:02.839180",
+ "modified": "2021-09-22 07:25:49.208415",
  "modified_by": "Administrator",
  "module": "Automation",
  "name": "Tools",
@@ -227,7 +228,7 @@
  "public": 1,
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 26,
+ "sequence_id": 16,
  "shortcuts": [
   {
    "label": "ToDo",

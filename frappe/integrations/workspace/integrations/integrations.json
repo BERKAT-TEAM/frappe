@@ -5,6 +5,7 @@
  "creation": "2020-03-02 15:16:18.714190",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
+ "divisi_ming": 0,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends": "",
@@ -267,7 +268,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-08-05 12:16:00.355267",
+ "modified": "2021-09-22 07:25:49.763371",
  "modified_by": "Administrator",
  "module": "Integrations",
  "name": "Integrations",
@@ -279,7 +280,7 @@
  "public": 1,
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 15,
+ "sequence_id": 26,
  "shortcuts": [],
  "title": "Integrations"
 }

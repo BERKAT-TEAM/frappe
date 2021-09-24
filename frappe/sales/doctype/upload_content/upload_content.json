@@ -1,0 +1,182 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-09-22 07:37:48.036187",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "no_dokumen",
+  "no_revisi",
+  "nama",
+  "jabatan",
+  "divisi",
+  "no_service",
+  "no_jo",
+  "client",
+  "nama_konten",
+  "lokasi",
+  "tanggal_upload",
+  "deadline",
+  "perintah_kerja",
+  "kepada",
+  "jenis_media",
+  "keterangan",
+  "foto_sebelum",
+  "foto_sesudah",
+  "data_19",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_dokumen",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No. Dokumen",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_revisi",
+   "fieldtype": "Data",
+   "label": "No. Revisi"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jabatan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Divisi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_service",
+   "fieldtype": "Data",
+   "label": "No. Service",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_jo",
+   "fieldtype": "Data",
+   "label": "No. JO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama_konten",
+   "fieldtype": "Data",
+   "label": "Nama Konten"
+  },
+  {
+   "fieldname": "lokasi",
+   "fieldtype": "Geolocation",
+   "label": "Lokasi"
+  },
+  {
+   "fieldname": "tanggal_upload",
+   "fieldtype": "Data",
+   "label": "Tanggal Upload"
+  },
+  {
+   "fieldname": "deadline",
+   "fieldtype": "Data",
+   "label": "Deadline"
+  },
+  {
+   "fieldname": "perintah_kerja",
+   "fieldtype": "Text",
+   "label": "Perintah Kerja"
+  },
+  {
+   "fieldname": "kepada",
+   "fieldtype": "Data",
+   "label": "Kepada"
+  },
+  {
+   "fieldname": "jenis_media",
+   "fieldtype": "Data",
+   "label": "Jenis Media"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Data",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "foto_sebelum",
+   "fieldtype": "Attach Image",
+   "label": "Foto Sebelum"
+  },
+  {
+   "fieldname": "foto_sesudah",
+   "fieldtype": "Attach Image",
+   "label": "Foto Sesudah"
+  },
+  {
+   "fieldname": "data_19",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Upload Content",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-22 07:43:46.580234",
+ "modified_by": "Administrator",
+ "module": "Sales",
+ "name": "Upload Content",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

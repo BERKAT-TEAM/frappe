@@ -5,6 +5,7 @@
  "creation": "2020-03-02 15:15:03.839594",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
+ "divisi_ming": 0,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends": "",
@@ -130,7 +131,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-08-05 12:15:57.486112",
+ "modified": "2021-09-22 07:25:49.651788",
  "modified_by": "Administrator",
  "module": "Custom",
  "name": "Customization",
@@ -142,7 +143,7 @@
  "public": 1,
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 8,
+ "sequence_id": 24,
  "shortcuts": [
   {
    "label": "Customize Form",
