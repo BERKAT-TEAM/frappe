@@ -29,7 +29,7 @@ def download_file(url, prefix):
 
 	filename = urlparse(url).path.split("/")[-1]
 	local_filename = os.path.join(prefix, filename)
-	with get(url, stream=True, allow_redirects=True) as r:
+	with get(url, stream=True, allow_redirects=True, verify=False) as r:
 		r.raise_for_status()
 		with open(local_filename, "wb") as f:
 			for chunk in r.iter_content(chunk_size=8192):
