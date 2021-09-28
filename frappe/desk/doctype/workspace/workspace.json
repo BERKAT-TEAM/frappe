@@ -39,7 +39,8 @@
   "cards_label",
   "links",
   "roles_section",
-  "roles"
+  "roles",
+  "modules"
  ],
  "fields": [
   {
@@ -262,11 +263,17 @@
    "fieldname": "roles_section",
    "fieldtype": "Section Break",
    "label": "Roles"
+  },
+  {
+   "default": "0",
+   "fieldname": "modules",
+   "fieldtype": "Check",
+   "label": "Modules"
   }
  ],
  "in_create": 1,
  "links": [],
- "modified": "2021-09-16 12:01:06.450621",
+ "modified": "2021-09-27 17:47:18.250483",
  "modified_by": "Administrator",
  "module": "Desk",
  "name": "Workspace",

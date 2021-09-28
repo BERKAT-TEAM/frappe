@@ -34,7 +34,7 @@ frappe.views.Workspace = class Workspace {
 		};
 		this.sidebar_categories = [
 			'My Workspaces',
-			'Public'
+			'Ming Divisions'
 		];
 
 		this.prepare_container();
@@ -113,7 +113,7 @@ frappe.views.Workspace = class Workspace {
 
 		this.sidebar_categories.forEach(category => {
 			let root_pages = this.public_pages.filter(page => page.parent_page == '' || page.parent_page == null);
-			if (category != 'Public') {
+			if (category != 'Ming Divisions') {
 				root_pages = this.private_pages.filter(page => page.parent_page == '' || page.parent_page == null);
 			}
 			this.build_sidebar_section(category, root_pages);

@@ -1,0 +1,45 @@
+{
+ "category": "Modules",
+ "charts": [
+  {
+   "chart_name": "Sales Order Analysis",
+   "label": "Sales Order Analysis"
+  },
+  {
+   "chart_name": "Sales Order Trends",
+   "label": "Sales Order Trends"
+  },
+  {
+   "chart_name": "Item-wise Annual Sales",
+   "label": "Item-wise Annual Sales"
+  }
+ ],
+ "content": "[{\"type\":\"chart\",\"data\":{\"chart_name\":\"Sales Order Analysis\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Sales Order Trends\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Item-wise Annual Sales\",\"col\":12}}]",
+ "creation": "2021-09-27 18:12:07.500814",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "tag",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Sales",
+ "links": [],
+ "modified": "2021-09-28 09:33:00.973943",
+ "modified_by": "Administrator",
+ "module": "Sales",
+ "modules": 0,
+ "name": "Sales",
+ "owner": "Administrator",
+ "parent_page": "",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "public": 1,
+ "roles": [],
+ "sequence_id": 3,
+ "shortcuts": [],
+ "title": "Sales"
+}

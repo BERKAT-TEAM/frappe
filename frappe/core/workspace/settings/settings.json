@@ -5,7 +5,6 @@
  "creation": "2020-03-02 15:09:40.527211",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
- "divisi_ming": 0,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends": "",
@@ -375,9 +374,10 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-22 07:25:49.697290",
+ "modified": "2021-09-27 18:13:12.935644",
  "modified_by": "Administrator",
  "module": "Core",
+ "modules": 0,
  "name": "Settings",
  "onboarding": "",
  "owner": "Administrator",
@@ -387,7 +387,7 @@
  "public": 1,
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 25,
+ "sequence_id": 14,
  "shortcuts": [
   {
    "icon": "setting",
