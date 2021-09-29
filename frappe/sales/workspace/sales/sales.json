@@ -28,7 +28,7 @@
  "is_standard": 1,
  "label": "Sales",
  "links": [],
- "modified": "2021-09-28 09:33:00.973943",
+ "modified": "2021-09-28 11:09:14.179997",
  "modified_by": "Administrator",
  "module": "Sales",
  "modules": 0,
@@ -39,7 +39,7 @@
  "pin_to_top": 0,
  "public": 1,
  "roles": [],
- "sequence_id": 3,
+ "sequence_id": 5,
  "shortcuts": [],
  "title": "Sales"
 }
