@@ -277,10 +277,11 @@
  "icon": "fa fa-calendar",
  "idx": 1,
  "links": [],
- "modified": "2020-01-14 21:47:15.825287",
+ "modified": "2021-09-29 11:51:29.939509",
  "modified_by": "Administrator",
  "module": "Desk",
  "name": "Event",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

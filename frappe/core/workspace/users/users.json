@@ -5,7 +5,6 @@
  "creation": "2020-03-02 15:12:16.754449",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
- "divisi_ming": 0,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends": "",
@@ -153,9 +152,10 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-22 07:25:49.162342",
+ "modified": "2021-09-29 09:46:10.054379",
  "modified_by": "Administrator",
  "module": "Core",
+ "modules": 0,
  "name": "Users",
  "onboarding": "",
  "owner": "Administrator",
@@ -165,7 +165,7 @@
  "public": 1,
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 15,
+ "sequence_id": 13,
  "shortcuts": [
   {
    "label": "User",
