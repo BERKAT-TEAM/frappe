@@ -79,6 +79,7 @@
   {
    "fieldname": "user",
    "fieldtype": "Link",
+   "hidden": 1,
    "in_global_search": 1,
    "label": "User Id",
    "options": "User"
@@ -129,6 +130,7 @@
   {
    "fieldname": "contact_details",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Reference",
    "options": "fa fa-pushpin"
   },
@@ -149,6 +151,7 @@
   {
    "fieldname": "more_info",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "More Information",
    "options": "fa fa-file-text"
   },
@@ -159,18 +162,21 @@
   },
   {
    "fieldname": "designation",
-   "fieldtype": "Data",
-   "label": "Designation"
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
   },
   {
    "default": "0",
    "fieldname": "unsubscribed",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Unsubscribed"
   },
   {
    "fieldname": "middle_name",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Middle Name"
   },
   {
@@ -178,6 +184,7 @@
    "depends_on": "eval:doc.sync_with_google_contacts || doc.pulled_from_google_contacts",
    "fieldname": "sb_00",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Google Contacts"
   },
   {
@@ -221,6 +228,7 @@
   {
    "fieldname": "google_contacts",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Google Contacts",
    "options": "Google Contacts"
   },
@@ -236,6 +244,7 @@
   {
    "fieldname": "google_contacts_id",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Google Contacts Id",
    "read_only": 1
   },
@@ -250,7 +259,7 @@
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-08-27 14:12:09.906719",
+ "modified": "2021-10-01 11:07:20.144538",
  "modified_by": "Administrator",
  "module": "Contacts",
  "name": "Contact",
