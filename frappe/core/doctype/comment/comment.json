@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "creation": "2019-02-07 10:10:46.845678",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -104,7 +105,8 @@
    "label": "Content"
   }
  ],
- "modified": "2019-09-02 21:00:10.784787",
+ "links": [],
+ "modified": "2021-10-05 08:52:44.613820",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "Comment",
@@ -139,5 +141,7 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "comment_type",
- "track_changes": 1
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

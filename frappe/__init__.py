@@ -496,7 +496,7 @@ def sendmail(recipients=[], sender="", subject="No Subject", message="No Message
 		attachments=None, content=None, doctype=None, name=None, reply_to=None, queue_separately=False,
 		cc=[], bcc=[], message_id=None, in_reply_to=None, send_after=None, expose_recipients=None,
 		send_priority=1, communication=None, retry=1, now=None, read_receipt=None, is_notification=False,
-		inline_images=None, template=None, args=None, header=None, print_letterhead=False, with_container=False):
+		inline_images=None, template=None, args=None, header=None, print_letterhead=True, with_container=False):
 	"""Send email using user's default **Email Account** or global default **Email Account**.
 
 
@@ -1513,7 +1513,7 @@ def format(*args, **kwargs):
 	return frappe.utils.formatters.format_value(*args, **kwargs)
 
 def get_print(doctype=None, name=None, print_format=None, style=None,
-	html=None, as_pdf=False, doc=None, output=None, no_letterhead=0, password=None):
+	html=None, as_pdf=False, doc=None, output=None, no_letterhead=1, password=None):
 	"""Get Print Format for given document.
 
 	:param doctype: DocType of document.

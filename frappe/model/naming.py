@@ -6,7 +6,7 @@ where X is a counter and it increments when amended again and so on.
 
 From Version 14, The naming pattern is changed in a way that amended documents will
 have the original name `orig_name` instead of `orig_name-X`. To make this happen
-the cancelled document naming pattern is changed to 'orig_name-CANC-X'.
+the cancelled document naming pattern is changed to 'orig_name-REV-X'.
 """
 
 # Copyright (c) 2015, Frappe Technologies Pvt. Ltd. and Contributors
@@ -239,10 +239,10 @@ def revert_series_if_last(key, name, doc=None):
 
 		# Get document name by parsing incase of fist cancelled document
 		if doc.docstatus == 2 and not doc.amended_from:
-			if doc.name.endswith('-CANC'):
-				name, _ = NameParser.parse_docname(doc.name, sep='-CANC')
+			if doc.name.endswith('-REV'):
+				name, _ = NameParser.parse_docname(doc.name, sep='-REV')
 			else:
-				name, _ = NameParser.parse_docname(doc.name, sep='-CANC-')
+				name, _ = NameParser.parse_docname(doc.name, sep='-REV-')
 
 	if ".#" in key:
 		prefix, hashes = key.rsplit(".", 1)
@@ -382,37 +382,37 @@ class NameParser:
 		"""
 		Cancelled document naming will be in one of these formats
 
-		* original_name-X-CANC - This is introduced to migrate old style naming to new style
-		* original_name-CANC - This is introduced to migrate old style naming to new style
-		* original_name-CANC-X - This is the new style naming
+		* original_name-X-REV - This is introduced to migrate old style naming to new style
+		* original_name-REV - This is introduced to migrate old style naming to new style
+		* original_name-REV-X - This is the new style naming
 
 		New style naming: In new style naming amended documents will have original name. That says,
-		when a document gets cancelled we need rename the document by adding `-CANC-X` to the end
+		when a document gets cancelled we need rename the document by adding `-REV-X` to the end
 		so that amended documents can use the original name.
 
 		Old style naming: cancelled documents stay with original name and when amended, amended one
 		gets a new name as `original_name-X`. To bring new style naming we had to change the existing
-		cancelled document names and that is done by adding `-CANC` to cancelled documents through patch.
+		cancelled document names and that is done by adding `-REV` to cancelled documents through patch.
 		"""
 		if not getattr(self.doc, 'amended_from', None):
 			return (None, None)
 
-		# Handle old style cancelled documents (original_name-X-CANC, original_name-CANC)
-		if self.doc.amended_from.endswith('-CANC'):
-			name, _ = self.parse_docname(self.doc.amended_from, '-CANC')
+		# Handle old style cancelled documents (original_name-X-REV, original_name-REV)
+		if self.doc.amended_from.endswith('-REV'):
+			name, _ = self.parse_docname(self.doc.amended_from, '-REV')
 			amended_from_doc = frappe.get_all(
 				self.doc.doctype,
 				filters = {'name': self.doc.amended_from},
 				fields = ['amended_from'],
 				limit=1)
 
-			# Handle format original_name-X-CANC.
+			# Handle format original_name-X-REV.
 			if amended_from_doc and amended_from_doc[0].amended_from:
 				return self.parse_docname(name, '-')
 			return name, None
 
 		# Handle new style cancelled documents
-		return self.parse_docname(self.doc.amended_from, '-CANC-')
+		return self.parse_docname(self.doc.amended_from, '-REV-')
 
 	@classmethod
 	def parse_docname(cls, name, sep='-'):
@@ -425,7 +425,7 @@ class NameParser:
 def get_cancelled_doc_latest_counter(tname, docname):
 	"""Get the latest counter used for cancelled docs of given docname.
 	"""
-	name_prefix = f'{docname}-CANC-'
+	name_prefix = f'{docname}-REV-'
 
 	rows = frappe.db.sql("""
 		select
@@ -448,4 +448,5 @@ def gen_new_name_for_cancelled_doc(doc):
 		name = doc.name
 
 	counter = get_cancelled_doc_latest_counter(doc.doctype, name)
-	return f'{name}-CANC-{counter+1}'
+	# return f'{name}-REV-{counter+1}'
+	return f'{name}-REV-{counter+1}'

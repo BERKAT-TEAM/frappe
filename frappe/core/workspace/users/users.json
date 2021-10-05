@@ -1,7 +1,7 @@
 {
  "category": "",
  "charts": [],
- "content": "[{\"type\": \"header\", \"data\": {\"text\": \"Your Shortcuts\", \"level\": 4, \"col\": 12}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"User\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Role\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Permission Manager\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"User Profile\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"User Type\", \"col\": 4}}, {\"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"type\": \"header\", \"data\": {\"text\": \"Reports & Masters\", \"level\": 4, \"col\": 12}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Users\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Logs\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Permissions\", \"col\": 4}}]",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Your Shortcuts\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"User\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Role\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Permission Manager\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"User Profile\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"User Type\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Reports &amp; Masters\",\"level\":4,\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Users\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Logs\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Permissions\",\"col\":4}}]",
  "creation": "2020-03-02 15:12:16.754449",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -17,14 +17,6 @@
  "is_standard": 0,
  "label": "Users",
  "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Users",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
-  },
   {
    "dependencies": "",
    "hidden": 0,
@@ -150,9 +142,60 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Users",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "User",
+   "link_count": 0,
+   "link_to": "User",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Role",
+   "link_count": 0,
+   "link_to": "Role",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Role Profile",
+   "link_count": 0,
+   "link_to": "Role Profile",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Chat",
+   "link_count": 0,
+   "link_to": "Chat Message",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2021-09-29 09:46:10.054379",
+ "modified": "2021-10-05 14:21:41.283099",
  "modified_by": "Administrator",
  "module": "Core",
  "modules": 0,

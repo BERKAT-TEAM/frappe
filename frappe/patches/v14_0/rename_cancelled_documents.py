@@ -17,7 +17,7 @@ def get_cancelled_doc_names(doctype):
 	"""Return names of cancelled document names those are in old format.
 	"""
 	docs = frappe.db.get_all(doctype, filters={'docstatus': 2}, pluck='name')
-	return [each for each in docs if not (each.endswith('-CANC') or ('-CANC-' in each))]
+	return [each for each in docs if not (each.endswith('-REV') or ('-REV-' in each))]
 
 @functools.lru_cache()
 def get_linked_doctypes():
@@ -83,7 +83,7 @@ def update_cancelled_document_names(doctype, cancelled_doc_names):
 		update
 			`tab{doctype}`
 		set
-			name=CONCAT(name, '-CANC')
+			name=CONCAT(name, '-REV')
 		where
 			docstatus=2
 			and
@@ -95,7 +95,7 @@ def update_amended_field(doctype, cancelled_doc_names):
 		update
 			`tab{doctype}`
 		set
-			amended_from=CONCAT(amended_from, '-CANC')
+			amended_from=CONCAT(amended_from, '-REV')
 		where
 			amended_from in %(cancelled_doc_names)s;
 	""".format(doctype=doctype), {'cancelled_doc_names': cancelled_doc_names})
@@ -105,7 +105,7 @@ def update_attachments(doctype, cancelled_doc_names):
 		update
 			`tabFile`
 		set
-			attached_to_name=CONCAT(attached_to_name, '-CANC')
+			attached_to_name=CONCAT(attached_to_name, '-REV')
 		where
 			attached_to_doctype=%(dt)s and attached_to_name in %(cancelled_doc_names)s
 		""", {'cancelled_doc_names': cancelled_doc_names, 'dt': doctype})
@@ -115,7 +115,7 @@ def update_versions(doctype, cancelled_doc_names):
 		UPDATE
 			`tabVersion`
 		SET
-			docname=CONCAT(docname, '-CANC')
+			docname=CONCAT(docname, '-REV')
 		WHERE
 			ref_doctype=%(dt)s AND docname in %(cancelled_doc_names)s
 		""", {'cancelled_doc_names': cancelled_doc_names, 'dt': doctype})
@@ -129,7 +129,7 @@ def update_linked_doctypes(doctype, cancelled_doc_names):
 				update
 					`tab{linked_dt}`
 				set
-					`{column}`=CONCAT(`{column}`, '-CANC')
+					`{column}`=CONCAT(`{column}`, '-REV')
 				where
 					`{column}` in %(cancelled_doc_names)s;
 			""".format(linked_dt=linked_dt, column=field),
@@ -137,7 +137,7 @@ def update_linked_doctypes(doctype, cancelled_doc_names):
 		else:
 			doc = frappe.get_single(linked_dt)
 			if getattr(doc, field) in cancelled_doc_names:
-				setattr(doc, field, getattr(doc, field)+'-CANC')
+				setattr(doc, field, getattr(doc, field)+'-REV')
 				doc.flags.ignore_mandatory=True
 				doc.flags.ignore_validate=True
 				doc.save(ignore_permissions=True)
@@ -151,7 +151,7 @@ def update_dynamic_linked_doctypes(doctype, cancelled_doc_names):
 				update
 					`tab{linked_dt}`
 				set
-					`{column}`=CONCAT(`{column}`, '-CANC')
+					`{column}`=CONCAT(`{column}`, '-REV')
 				where
 					`{column}` in %(cancelled_doc_names)s and {doctype_fieldname}=%(dt)s;
 			""".format(linked_dt=linked_dt, column=fieldname, doctype_fieldname=doctype_fieldname),
@@ -159,7 +159,7 @@ def update_dynamic_linked_doctypes(doctype, cancelled_doc_names):
 		else:
 			doc = frappe.get_single(linked_dt)
 			if getattr(doc, doctype_fieldname) == doctype and getattr(doc, fieldname) in cancelled_doc_names:
-				setattr(doc, fieldname, getattr(doc, fieldname)+'-CANC')
+				setattr(doc, fieldname, getattr(doc, fieldname)+'-REV')
 				doc.flags.ignore_mandatory=True
 				doc.flags.ignore_validate=True
 				doc.save(ignore_permissions=True)
@@ -174,14 +174,14 @@ def update_child_tables(doctype, cancelled_doc_names):
 				update
 					`tab{table}`
 				set
-					parent=CONCAT(parent, '-CANC')
+					parent=CONCAT(parent, '-REV')
 				where
 					parenttype=%(dt)s and parent in %(cancelled_doc_names)s;
 			""".format(table=table), {'cancelled_doc_names': cancelled_doc_names, 'dt': doctype})
 		else:
 			doc = frappe.get_single(table)
 			if getattr(doc, 'parenttype')==doctype and getattr(doc, 'parent') in cancelled_doc_names:
-				setattr(doc, 'parent', getattr(doc, 'parent')+'-CANC')
+				setattr(doc, 'parent', getattr(doc, 'parent')+'-REV')
 				doc.flags.ignore_mandatory=True
 				doc.flags.ignore_validate=True
 				doc.save(ignore_permissions=True)

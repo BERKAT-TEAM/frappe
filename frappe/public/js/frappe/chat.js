@@ -2782,7 +2782,7 @@ frappe.chat.setup  = () => {
 }
 
 // TODO: Re-enable after re-designing chat
-// $(document).on('ready toolbar_setup', () =>
-// {
-// 	frappe.chat.setup()
-// })
+$(document).on('ready toolbar_setup', () =>
+{
+	frappe.chat.setup()
+})
