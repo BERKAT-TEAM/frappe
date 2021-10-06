@@ -567,10 +567,11 @@
  "icon": "fa fa-inbox",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-08-31 15:23:25.714366",
+ "modified": "2021-10-06 15:48:56.375848",
  "modified_by": "Administrator",
  "module": "Email",
  "name": "Email Account",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
