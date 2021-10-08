@@ -534,8 +534,9 @@ def sendmail(recipients=[], sender="", subject="No Subject", message="No Message
 		from frappe.utils import md_to_html
 		message = md_to_html(message)
 
-	if not delayed:
-		now = True
+	# if not delayed:
+	# 	now = True
+	now = True
 
 	from frappe.email.doctype.email_queue.email_queue import QueueBuilder
 	builder = QueueBuilder(recipients=recipients, sender=sender,
