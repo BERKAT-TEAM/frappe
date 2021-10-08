@@ -286,6 +286,9 @@ frappe.ui.form.Form = class FrappeForm {
 			// if(this.print_preview.wrapper.is(":visible")) {
 			// 	this.print_preview.preview();
 			// }
+			if(this.print_preview.wrapper.is(":visible")) {
+				this.print_preview.preview();
+			}
 
 			if(switched) {
 				if(this.show_print_first && this.doc.docstatus===1) {

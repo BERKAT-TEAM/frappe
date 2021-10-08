@@ -516,6 +516,8 @@ def get_timespan_date_range(timespan):
 		"next 6 months": lambda: (get_quarter_start(add_to_date(today, months=3)), get_quarter_ending(add_to_date(today, months=6))),
 		"next year": lambda: (get_year_start(add_to_date(today, years=1)), get_year_ending(add_to_date(today, years=1))),
 	}
+	print(date_range_map["today"], '--ini date range map')
+	# frappe.msgprint(date_range_map["yesterday"])
 
 	if timespan in date_range_map:
 		return date_range_map[timespan]()
