@@ -44,7 +44,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Address Type",
-   "options": "Billing\nShipping\nOffice\nPersonal\nPlant\nPostal\nShop\nSubsidiary\nWarehouse\nCurrent\nPermanent\nOther",
+   "options": "Billing\nOffice\nPersonal\nWarehouse\nOther",
    "reqd": 1
   },
   {
@@ -99,13 +99,17 @@
   {
    "fieldname": "email_id",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Email Address",
-   "options": "Email"
+   "options": "Email",
+   "print_hide": 1
   },
   {
    "fieldname": "phone",
    "fieldtype": "Data",
-   "label": "Phone"
+   "hidden": 1,
+   "label": "Phone",
+   "print_hide": 1
   },
   {
    "fieldname": "fax",
@@ -122,6 +126,7 @@
    "default": "0",
    "fieldname": "is_shipping_address",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Preferred Shipping Address"
   },
   {
@@ -146,7 +151,7 @@
  "icon": "fa fa-map-marker",
  "idx": 5,
  "links": [],
- "modified": "2021-10-11 10:33:07.641323",
+ "modified": "2021-10-14 14:35:56.268703",
  "modified_by": "Administrator",
  "module": "Contacts",
  "name": "Address",

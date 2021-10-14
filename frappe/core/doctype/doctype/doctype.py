@@ -83,8 +83,8 @@ class DocType(Document):
 
 		check_email_append_to(self)
 
-		if self.default_print_format and not self.custom:
-			frappe.throw(_('Standard DocType cannot have default print format, use Customize Form'))
+		# if self.default_print_format and not self.custom:
+		# 	frappe.throw(_('Standard DocType cannot have default print format, use Customize Form'))
 
 		if frappe.conf.get('developer_mode'):
 			self.owner = 'Administrator'

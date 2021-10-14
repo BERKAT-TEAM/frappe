@@ -28,7 +28,7 @@
  "is_standard": 1,
  "label": "Sales",
  "links": [],
- "modified": "2021-09-30 17:59:08.194108",
+ "modified": "2021-10-14 16:37:57.436775",
  "modified_by": "Administrator",
  "module": "Sales",
  "modules": 0,
@@ -41,5 +41,5 @@
  "roles": [],
  "sequence_id": 5,
  "shortcuts": [],
- "title": "Sales"
+ "title": "CMS"
 }
