@@ -1,7 +1,7 @@
 {
  "category": "Modules",
  "charts": [],
- "content": "[]",
+ "content": "[{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Order Design\",\"col\":4}}]",
  "creation": "2021-09-27 18:06:42.671369",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -15,7 +15,7 @@
  "is_standard": 1,
  "label": "Creative",
  "links": [],
- "modified": "2021-09-28 11:09:14.219553",
+ "modified": "2021-10-15 15:50:22.370915",
  "modified_by": "Administrator",
  "module": "Creative",
  "modules": 0,
@@ -27,6 +27,14 @@
  "public": 1,
  "roles": [],
  "sequence_id": 7,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Order Design",
+   "link_to": "Order Design",
+   "type": "DocType"
+  }
+ ],
  "title": "Creative"
 }

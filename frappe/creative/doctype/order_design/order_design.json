@@ -1,0 +1,162 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-10-15 14:39:29.117903",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "no_revisi",
+  "owner",
+  "jabatan",
+  "no_jo",
+  "client",
+  "column_break1",
+  "tanggal_upload",
+  "deadline",
+  "product_name",
+  "design_size",
+  "design_location",
+  "keterangan",
+  "attachment",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Document",
+   "options": "FR-PROD-007-.YYYY.-"
+  },
+  {
+   "fieldname": "no_revisi",
+   "fieldtype": "Data",
+   "label": "No. Revisi"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "options": "Name",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "description": "Jabatan",
+   "fetch_from": "nama.role_profile_name",
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation"
+  },
+  {
+   "fieldname": "no_jo",
+   "fieldtype": "Link",
+   "label": "Job Order",
+   "options": "Sales Order",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "no_jo.customer_name",
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tanggal_upload",
+   "fieldtype": "Date",
+   "label": "Tanggal Upload",
+   "reqd": 1
+  },
+  {
+   "fieldname": "deadline",
+   "fieldtype": "Date",
+   "label": "Deadline",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "description": "Kepada",
+   "fieldname": "design_size",
+   "fieldtype": "Data",
+   "label": "Design Size"
+  },
+  {
+   "fieldname": "design_location",
+   "fieldtype": "Data",
+   "label": "Design Location"
+  },
+  {
+   "description": "Keterangan",
+   "fieldname": "keterangan",
+   "fieldtype": "Data",
+   "label": "More Information"
+  },
+  {
+   "description": "Foto sesudah",
+   "fieldname": "attachment",
+   "fieldtype": "Attach Image",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Order Design",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "max_attachments": 12,
+ "modified": "2021-10-15 16:53:05.226678",
+ "modified_by": "Administrator",
+ "module": "Creative",
+ "name": "Order Design",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
