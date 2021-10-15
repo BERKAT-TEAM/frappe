@@ -1,19 +1,6 @@
 {
  "category": "Modules",
- "charts": [
-  {
-   "chart_name": "Sales Order Analysis",
-   "label": "Sales Order Analysis"
-  },
-  {
-   "chart_name": "Sales Order Trends",
-   "label": "Sales Order Trends"
-  },
-  {
-   "chart_name": "Item-wise Annual Sales",
-   "label": "Item-wise Annual Sales"
-  }
- ],
+ "charts": [],
  "content": "[{\"type\":\"chart\",\"data\":{\"chart_name\":\"Sales Order Analysis\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Sales Order Trends\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Item-wise Annual Sales\",\"col\":12}}]",
  "creation": "2021-09-27 18:12:07.500814",
  "developer_mode_only": 0,
@@ -28,7 +15,7 @@
  "is_standard": 1,
  "label": "Sales",
  "links": [],
- "modified": "2021-10-14 16:37:57.436775",
+ "modified": "2021-10-15 09:07:02.222122",
  "modified_by": "Administrator",
  "module": "Sales",
  "modules": 0,
@@ -40,6 +27,39 @@
  "public": 1,
  "roles": [],
  "sequence_id": 5,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Item",
+   "link_to": "Item",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Customer",
+   "link_to": "Customer",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Content",
+   "link_to": "Upload Content",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Delivery Note",
+   "link_to": "Delivery Note",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "format": "{} To Work",
+   "label": "Sales Order",
+   "link_to": "Sales Order",
+   "type": "DocType"
+  }
+ ],
+ "shortcuts_label": "",
  "title": "CMS"
 }
