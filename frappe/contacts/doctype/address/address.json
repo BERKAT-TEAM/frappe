@@ -62,19 +62,25 @@
    "fieldname": "city",
    "fieldtype": "Data",
    "hidden": 1,
-   "label": "City/Town"
+   "label": "City/Town",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "county",
    "fieldtype": "Data",
    "hidden": 1,
-   "label": "County"
+   "label": "County",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "state",
    "fieldtype": "Data",
    "hidden": 1,
-   "label": "State/Province"
+   "label": "State/Province",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "country",
@@ -151,7 +157,7 @@
  "icon": "fa fa-map-marker",
  "idx": 5,
  "links": [],
- "modified": "2021-10-14 14:35:56.268703",
+ "modified": "2021-10-19 12:40:18.751702",
  "modified_by": "Administrator",
  "module": "Contacts",
  "name": "Address",
