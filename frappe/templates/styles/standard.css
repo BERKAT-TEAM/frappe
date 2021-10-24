@@ -75,7 +75,7 @@
 
 .table {
 	font-size: inherit;
-	margin: 20px 0px;
+	margin: 10px 0px;
 }
 
 .square-image {
@@ -141,7 +141,7 @@ table.no-border, table.no-border td {
 
 .print-format td, .print-format th {
 	vertical-align: top !important;
-	padding: 6px !important;
+	padding: 3px !important;
 }
 
 .print-format p {
@@ -168,7 +168,7 @@ table td div {
 }
 
 [document-status] {
-	margin-bottom: 5mm;
+	margin-bottom: 0mm;
 }
 
 .signature-img {

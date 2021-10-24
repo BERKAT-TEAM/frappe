@@ -389,7 +389,7 @@ frappe.PrintFormatBuilder = class PrintFormatBuilder {
 						label:__("No of Columns"),
 						fieldname:"no_of_columns",
 						fieldtype:"Select",
-						options: ["1", "2", "3", "4"],
+						options: ["1", "2", "3", "4","5"],
 					},
 					{
 						label:__("Section Heading"),
@@ -498,7 +498,7 @@ frappe.PrintFormatBuilder = class PrintFormatBuilder {
 		})
 	}
 	update_columns_in_section(section, no_of_columns, new_no_of_columns) {
-		var col_size = 12 / new_no_of_columns,
+		var col_size = 11/ new_no_of_columns,
 			me = this,
 			resize = function() {
 				section.find(".section-column")
