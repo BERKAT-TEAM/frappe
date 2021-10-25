@@ -74,6 +74,7 @@
    "oldfieldtype": "Data",
    "options": "Email",
    "read_only": 1,
+   "reqd": 1,
    "search_index": 1
   },
   {
@@ -259,7 +260,7 @@
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-10-01 11:07:20.144538",
+ "modified": "2021-10-25 13:12:38.632885",
  "modified_by": "Administrator",
  "module": "Contacts",
  "name": "Contact",
