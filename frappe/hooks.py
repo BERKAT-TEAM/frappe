@@ -204,8 +204,7 @@ scheduler_events = {
 		"0/15 * * * *": [
 			"frappe.oauth.delete_oauth2_data",
 			"frappe.website.doctype.web_page.web_page.check_publish_status",
-			"frappe.twofactor.delete_all_barcodes_for_users",
-			"frappe.email.queue.flush"
+			"frappe.twofactor.delete_all_barcodes_for_users"
 		]
 	},
 	"all": [
