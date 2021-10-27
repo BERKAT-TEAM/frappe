@@ -93,6 +93,7 @@
    "default": "Passive",
    "fieldname": "status",
    "fieldtype": "Select",
+   "hidden": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Status",
@@ -224,6 +225,7 @@
    "default": "0",
    "fieldname": "sync_with_google_contacts",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Sync with Google Contacts"
   },
   {
@@ -260,7 +262,7 @@
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-10-25 13:12:38.632885",
+ "modified": "2021-10-26 16:40:55.117180",
  "modified_by": "Administrator",
  "module": "Contacts",
  "name": "Contact",
