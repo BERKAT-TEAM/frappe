@@ -554,6 +554,7 @@
    "collapsible": 1,
    "fieldname": "api_access",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Api Access"
   },
   {
@@ -670,7 +671,7 @@
   }
  ],
  "max_attachments": 5,
- "modified": "2021-02-02 16:11:06.037543",
+ "modified": "2021-10-29 11:44:12.083182",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User",

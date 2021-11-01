@@ -15,7 +15,7 @@
  "is_standard": 1,
  "label": "Creative",
  "links": [],
- "modified": "2021-10-15 15:50:22.370915",
+ "modified": "2021-10-29 14:21:57.662072",
  "modified_by": "Administrator",
  "module": "Creative",
  "modules": 0,
@@ -25,7 +25,23 @@
  "pin_to_bottom": 0,
  "pin_to_top": 0,
  "public": 1,
- "roles": [],
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "Sales Master Manager"
+  },
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Sales Admin"
+  }
+ ],
  "sequence_id": 7,
  "shortcuts": [
   {

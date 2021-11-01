@@ -1,11 +1,11 @@
 {
  "creation": "2021-10-08 16:07:55.002079",
- "css": ".print-heading {\n\ttext-align: left;\n\ttext-transform: uppercase;\n\tcolor: #666;\n\tpadding-bottom: 10px;\n\tmargin-bottom: 10px;\n\tborder-bottom: 1px solid #d1d8dd;\n}\n\n.print-heading h2 {\n\tfont-size: 24px;\n}\n\n.print-format th {\n\tbackground-color: #eee !important;\n\tborder-bottom: 0px !important;\n}\n\n.print-format .primary.compact-item {\n    font-weight: bold;\n}\n\n.print-format div{\n    line-height:0.5;\n}\n.print-format br{\n    padding: 0; border-spacing: 0!important;  margin:0!important; line-height:0.2;\n}\n\n.print-format .section-break{\n    line-height: 0.3;\n}\n\n.print-format .row:not(.section-break) {\n    line-height: 0.3;\n    margin-top: 3px !important;\n    margin-bottom: 3px !important;\n}\n\n.print-format .section-break:not(:last-child) {\n    margin-bottom: 0 !important;\n}\n\n/* modern format: for-test */",
+ "css": ".print-heading {\n\ttext-align: left;\n\ttext-transform: uppercase;\n\tcolor: #666;\n\tpadding-bottom: 10px;\n\tmargin-bottom: 10px;\n\tborder-bottom: 1px solid #d1d8dd;\n}\n\n.print-heading h2 {\n\tfont-size: 24px;\n}\n\n.print-format th {\n\tbackground-color: #eee !important;\n\tborder-bottom: 0px !important;\n}\n\n.print-format .primary.compact-item {\n    font-weight: bold;\n}\n\n.print-format div{\n    line-height:2;\n}\n.print-format br{\n    padding: 0; border-spacing: 0!important;  margin:0!important; line-height:0,2;\n}\n\n.print-format .section-break{\n    line-height: 0.3;\n}\n\n.print-format .row:not(.section-break) {\n    line-height: 0.3;\n    margin-top: 3px !important;\n    margin-bottom: 3px !important;\n}\n\n.print-format .section-break:not(:last-child) {\n    margin-bottom: 0 !important;\n}\n\n/* modern format: for-test */",
  "disabled": 0,
  "docstatus": 0,
  "doctype": "Print Style",
  "idx": 0,
- "modified": "2021-10-24 11:46:55.161771",
+ "modified": "2021-10-26 23:47:40.996807",
  "modified_by": "Administrator",
  "name": "ming_print_style",
  "owner": "Administrator",
