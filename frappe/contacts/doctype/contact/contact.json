@@ -74,6 +74,7 @@
    "oldfieldtype": "Data",
    "options": "Email",
    "read_only": 1,
+   "reqd": 1,
    "search_index": 1
   },
   {
