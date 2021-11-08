@@ -38,7 +38,8 @@
   "is_primary_contact",
   "more_info",
   "department",
-  "unsubscribed"
+  "unsubscribed",
+  "amended_from"
  ],
  "fields": [
   {
@@ -73,14 +74,11 @@
    "oldfieldname": "email_id",
    "oldfieldtype": "Data",
    "options": "Email",
-   "read_only": 1,
-   "reqd": 1,
-   "search_index": 1
+   "read_only": 1
   },
   {
    "fieldname": "user",
    "fieldtype": "Link",
-   "hidden": 1,
    "in_global_search": 1,
    "label": "User Id",
    "options": "User"
@@ -255,6 +253,15 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Company Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Contact",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "icon": "fa fa-user",
@@ -262,7 +269,7 @@
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-10-28 12:07:11.677577",
+ "modified": "2021-11-07 20:43:20.829225",
  "modified_by": "Administrator",
  "module": "Contacts",
  "name": "Contact",
@@ -393,5 +400,8 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "ASC"
+ "sort_order": "ASC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

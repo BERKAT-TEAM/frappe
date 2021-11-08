@@ -39,6 +39,7 @@
   "mute_sounds",
   "column_break_22",
   "mobile_no",
+  "signature",
   "change_password",
   "new_password",
   "logout_all_sessions",
@@ -603,6 +604,11 @@
    "fieldtype": "Link",
    "label": "Module Profile",
    "options": "Module Profile"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Attach",
+   "label": "Signature"
   }
  ],
  "icon": "fa fa-user",
@@ -671,7 +677,7 @@
   }
  ],
  "max_attachments": 5,
- "modified": "2021-10-29 11:44:12.083182",
+ "modified": "2021-11-08 10:50:34.676792",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User",

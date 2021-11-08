@@ -11,7 +11,6 @@
   "address_title",
   "address_type",
   "address_line1",
-  "address_line2",
   "city",
   "county",
   "state",
@@ -34,6 +33,7 @@
    "options": "fa fa-map-marker"
   },
   {
+   "description": "Isi NAMA lead/customer untuk mempermudah pencarian alamat",
    "fieldname": "address_title",
    "fieldtype": "Data",
    "label": "Address Title"
@@ -52,11 +52,6 @@
    "fieldtype": "Data",
    "label": "Address Line 1",
    "reqd": 1
-  },
-  {
-   "fieldname": "address_line2",
-   "fieldtype": "Data",
-   "label": "Address Line 2"
   },
   {
    "fieldname": "city",
@@ -139,6 +134,7 @@
    "default": "0",
    "fieldname": "disabled",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Disabled"
   },
   {
@@ -157,7 +153,7 @@
  "icon": "fa fa-map-marker",
  "idx": 5,
  "links": [],
- "modified": "2021-10-19 12:40:18.751702",
+ "modified": "2021-11-08 09:46:36.398359",
  "modified_by": "Administrator",
  "module": "Contacts",
  "name": "Address",

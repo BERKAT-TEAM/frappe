@@ -15,7 +15,7 @@
  "is_standard": 1,
  "label": "Sales",
  "links": [],
- "modified": "2021-10-15 09:07:02.222122",
+ "modified": "2021-11-02 09:14:15.045865",
  "modified_by": "Administrator",
  "module": "Sales",
  "modules": 0,
@@ -61,5 +61,5 @@
   }
  ],
  "shortcuts_label": "",
- "title": "CMS"
+ "title": "Sales"
 }
