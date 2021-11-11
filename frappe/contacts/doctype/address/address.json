@@ -33,10 +33,11 @@
    "options": "fa fa-map-marker"
   },
   {
-   "description": "Isi NAMA lead/customer untuk mempermudah pencarian alamat",
+   "description": "Isi Nama Depan lead/customer untuk mempermudah pencarian alamat",
    "fieldname": "address_title",
    "fieldtype": "Data",
-   "label": "Address Title"
+   "label": "Address Title",
+   "reqd": 1
   },
   {
    "fieldname": "address_type",
@@ -153,7 +154,7 @@
  "icon": "fa fa-map-marker",
  "idx": 5,
  "links": [],
- "modified": "2021-11-08 09:46:36.398359",
+ "modified": "2021-11-10 06:52:10.090935",
  "modified_by": "Administrator",
  "module": "Contacts",
  "name": "Address",
