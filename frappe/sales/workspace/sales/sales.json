@@ -15,8 +15,8 @@
  "is_standard": 1,
  "label": "Sales",
  "links": [],
- "modified": "2021-10-15 09:07:02.222122",
- "modified_by": "Administrator",
+ "modified": "2021-11-01 11:33:05.672450",
+ "modified_by": "it.dept@mingpromo.com",
  "module": "Sales",
  "modules": 0,
  "name": "Sales",
@@ -61,5 +61,5 @@
   }
  ],
  "shortcuts_label": "",
- "title": "CMS"
+ "title": "Sales"
 }

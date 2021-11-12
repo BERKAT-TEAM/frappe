@@ -39,6 +39,7 @@
   "mute_sounds",
   "column_break_22",
   "mobile_no",
+  "sales_signature",
   "change_password",
   "new_password",
   "logout_all_sessions",
@@ -173,6 +174,7 @@
   {
    "fieldname": "language",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Language",
    "options": "Language"
   },
@@ -265,6 +267,7 @@
   {
    "fieldname": "banner_image",
    "fieldtype": "Attach Image",
+   "hidden": 1,
    "label": "Banner Image"
   },
   {
@@ -541,6 +544,7 @@
    "depends_on": "enabled",
    "fieldname": "third_party_authentication",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Third Party Authentication",
    "permlevel": 1
   },
@@ -603,6 +607,11 @@
    "fieldtype": "Link",
    "label": "Module Profile",
    "options": "Module Profile"
+  },
+  {
+   "fieldname": "sales_signature",
+   "fieldtype": "Attach",
+   "label": "Signature"
   }
  ],
  "icon": "fa fa-user",
@@ -671,7 +680,7 @@
   }
  ],
  "max_attachments": 5,
- "modified": "2021-10-29 11:44:12.083182",
+ "modified": "2021-11-11 13:32:01.508564",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User",
@@ -698,7 +707,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "route": "user",
  "search_fields": "full_name",
  "show_name_in_global_search": 1,
