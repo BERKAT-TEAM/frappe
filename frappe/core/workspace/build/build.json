@@ -230,7 +230,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-11-02 15:38:15.605266",
+ "modified": "2021-12-03 16:13:26.472088",
  "modified_by": "Administrator",
  "module": "Core",
  "modules": 0,
@@ -250,7 +250,7 @@
    "role": "Workspace Manager"
   }
  ],
- "sequence_id": 11,
+ "sequence_id": 14,
  "shortcuts": [
   {
    "doc_view": "",

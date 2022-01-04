@@ -239,7 +239,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-29 09:46:10.566200",
+ "modified": "2021-12-10 11:35:22.076456",
  "modified_by": "Administrator",
  "module": "Website",
  "modules": 0,
@@ -251,8 +251,12 @@
  "pin_to_top": 0,
  "public": 1,
  "restrict_to_domain": "",
- "roles": [],
- "sequence_id": 20,
+ "roles": [
+  {
+   "role": "Administrator"
+  }
+ ],
+ "sequence_id": 24,
  "shortcuts": [
   {
    "color": "Green",

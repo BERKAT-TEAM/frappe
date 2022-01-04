@@ -448,6 +448,8 @@ def can_import(doctype, raise_exception=False):
 def can_export(doctype, raise_exception=False):
 	if "System Manager" in frappe.get_roles():
 		return True
+	elif "Sales User" in frappe.get_roles():
+		return True
 	else:
 		role_permissions = frappe.permissions.get_role_permissions(doctype)
 		has_access = role_permissions.get('export') or \

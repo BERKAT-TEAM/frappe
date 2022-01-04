@@ -1,0 +1,217 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-12-08 12:01:58.077765",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec1",
+  "naming_series",
+  "user",
+  "timestamp",
+  "datetime",
+  "sales_person",
+  "customer",
+  "brand",
+  "colb1",
+  "contact_person",
+  "activity",
+  "activity_description",
+  "colb2",
+  "won_or_loss",
+  "project_name",
+  "project_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec1",
+   "fieldtype": "Section Break",
+   "label": "Sales Activity"
+  },
+  {
+   "default": "Today",
+   "fieldname": "timestamp",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Timestamp",
+   "reqd": 1
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "colb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Select",
+   "label": "Activities",
+   "options": "- Sales Call\n- Kanvasing/Visit\n- Survey\n- Meeting\n- Email\n- Entertain"
+  },
+  {
+   "fieldname": "activity_description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Activity Description"
+  },
+  {
+   "fieldname": "colb2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "won_or_loss",
+   "fieldtype": "Select",
+   "label": "Won or Loss",
+   "options": "Won\nLoss"
+  },
+  {
+   "fieldname": "project_value",
+   "fieldtype": "Data",
+   "label": "Project Value"
+  },
+  {
+   "fetch_from": "user.full_name",
+   "fieldname": "sales_person",
+   "fieldtype": "Data",
+   "label": "Sales Person"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "SAL-ACT-.YYYY.-",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "From User",
+   "options": "User",
+   "print_hide": 1,
+   "report_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "default": "Now",
+   "fieldname": "datetime",
+   "fieldtype": "Datetime",
+   "label": "Datetime",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "max_attachments": 2,
+ "modified": "2022-01-04 12:45:28.042713",
+ "modified_by": "Administrator",
+ "module": "Sales",
+ "name": "Sales Activity",
+ "name_case": "UPPER CASE",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Master Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "customer,brand,contact_person,activity,won_or_loss",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

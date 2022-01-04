@@ -267,7 +267,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-29 09:46:10.509663",
+ "modified": "2021-12-10 11:34:56.115781",
  "modified_by": "Administrator",
  "module": "Integrations",
  "modules": 0,
@@ -279,8 +279,12 @@
  "pin_to_top": 0,
  "public": 1,
  "restrict_to_domain": "",
- "roles": [],
- "sequence_id": 19,
+ "roles": [
+  {
+   "role": "Administrator"
+  }
+ ],
+ "sequence_id": 23,
  "shortcuts": [],
  "title": "Integrations"
 }
