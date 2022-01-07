@@ -19,7 +19,7 @@ from frappe.utils import cstr, get_bench_id
 from frappe.utils.rq import RedisQueue
 from frappe.utils.commands import log
 
-#edit time background by /5
+###change time background job by /5
 default_timeout = 60
 queue_timeout = {
 	'long': 300,

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "creation": "2014-07-17 06:54:20.782907",
+ "default_print_format": "Job Order 1",
  "doctype": "DocType",
  "document_type": "System",
  "engine": "InnoDB",
@@ -183,7 +184,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2021-02-15 14:16:18.474254",
+ "modified": "2021-11-22 10:43:58.462718",
  "modified_by": "Administrator",
  "module": "Printing",
  "name": "Print Settings",

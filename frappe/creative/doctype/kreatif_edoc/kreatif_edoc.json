@@ -2,7 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "creation": "2021-11-18 11:49:29.267339",
+ "creation": "2021-11-19 08:04:48.070525",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -22,7 +22,7 @@
   "ukuran",
   "lokasi",
   "file",
-  "ket1"
+  "ket"
  ],
  "fields": [
   {
@@ -38,7 +38,7 @@
   {
    "fieldname": "no_rev",
    "fieldtype": "Data",
-   "label": "No revisi "
+   "label": "No revisi"
   },
   {
    "fieldname": "nama",
@@ -53,12 +53,12 @@
   {
    "fieldname": "jabatan",
    "fieldtype": "Data",
-   "label": "Jabatan "
+   "label": "Jabatan"
   },
   {
    "fieldname": "divisi",
    "fieldtype": "Data",
-   "label": "Divisi "
+   "label": "Divisi"
   },
   {
    "fieldname": "no_order",
@@ -117,14 +117,14 @@
    "label": "File"
   },
   {
-   "fieldname": "ket1",
+   "fieldname": "ket",
    "fieldtype": "Data",
    "label": "Keterangan"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-11-19 11:41:21.902245",
+ "modified": "2021-11-29 14:54:30.703105",
  "modified_by": "Administrator",
  "module": "Creative",
  "name": "Kreatif Edoc",

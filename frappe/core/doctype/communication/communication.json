@@ -197,7 +197,6 @@
    "label": "More Information"
   },
   {
-   "bold": 0,
    "default": "Now",
    "fieldname": "communication_date",
    "fieldtype": "Datetime",
@@ -387,7 +386,7 @@
  "icon": "fa fa-comment",
  "idx": 1,
  "links": [],
- "modified": "2021-03-25 09:44:28.963538",
+ "modified": "2021-12-13 09:28:59.803629",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "Communication",
@@ -440,6 +439,19 @@
    "if_owner": 1,
    "read": 1,
    "role": "All"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "select": 1,
+   "share": 1,
+   "write": 1
   }
  ],
  "search_fields": "subject",

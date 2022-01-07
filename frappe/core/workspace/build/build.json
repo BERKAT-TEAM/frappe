@@ -230,7 +230,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-29 09:46:09.928327",
+ "modified": "2021-12-03 16:13:26.472088",
  "modified_by": "Administrator",
  "module": "Core",
  "modules": 0,
@@ -242,8 +242,15 @@
  "pin_to_top": 0,
  "public": 1,
  "restrict_to_domain": "",
- "roles": [],
- "sequence_id": 11,
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Workspace Manager"
+  }
+ ],
+ "sequence_id": 14,
  "shortcuts": [
   {
    "doc_view": "",
